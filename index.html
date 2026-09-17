@@ -1,0 +1,573 @@
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>7-Savxoz Tezkor Taksi</title>
+
+    <meta
+        name="description"
+        content="7-Savxoz Tezkor Taksi — qulay, tezkor va ishonchli taksi xizmati."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            🚕 7-Savxoz <span>Taksi</span>
+        </div>
+
+        <div class="online">
+            <div class="online-dot"></div>
+            ONLINE
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="taxi">🚕</div>
+
+            <h1>
+                7-Savxoz<br>
+                <span>Tezkor Taksi</span>
+            </h1>
+
+            <p class="subtitle">
+                Savxoz bo‘ylab qulay va arzon harakatlaning!
+            </p>
+
+            <div class="price">
+                🟢 Savxoz ichida yagona narx: 10 000 so‘m
+            </div>
+
+            <div class="buttons">
+
+                <a
+                    class="btn btn-green"
+                    href="tel:+998878885301"
+                >
+                    📞 Qo‘ng‘iroq qilish
+                </a>
+
+                <a
+                    class="btn btn-dark"
+                    href="https://t.me/t_baxtiyarovic"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    ✈️ Telegram
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AVANTAGES -->
+    <section>
+
+        <h2 class="section-title">
+            Nega aynan <span>biz?</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">⚡</div>
+
+                <h3>5–10 daqiqa</h3>
+
+                <p>
+                    Buyurtmadan keyin imkon qadar tez xizmat ko‘rsatish.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">💰</div>
+
+                <h3>10 000 so‘m</h3>
+
+                <p>
+                    Savxoz ichida yagona narx.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🚗</div>
+
+                <h3>Toza mashinalar</h3>
+
+                <p>
+                    Qulay va ozoda avtomobillar.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🕐</div>
+
+                <h3>24/7 aloqa</h3>
+
+                <p>
+                    Taksi bo‘yicha istalgan vaqtda bog‘lanish imkoniyati.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- LOCATION -->
+        <div class="location">
+
+            <div class="location-title">
+                📍 Bizning manzil
+            </div>
+
+            <div class="location-text">
+                Sirdaryo viloyati, Sardoba tumani, 7-Savxoz
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DRIVER -->
+    <section>
+
+        <div class="driver">
+
+            <h2>
+                🚕 Jamoamizga qo‘shiling
+            </h2>
+
+            <p>
+                Haydovchi bo‘ling, o‘zingizga qulay vaqtda ishlang
+                hamda buyurtmalarni qabul qiling.
+            </p>
+
+
+            <div class="driver-list">
+
+                <div class="driver-item">
+                    🚗 O‘z mashinangiz
+                </div>
+
+                <div class="driver-item">
+                    🕐 Moslashuvchan jadval
+                </div>
+
+                <div class="driver-item">
+                    📲 Buyurtmalar
+                </div>
+
+                <div class="driver-item">
+                    💰 Kunlik daromad
+                </div>
+
+            </div>
+
+
+            <button
+                class="btn btn-green"
+                onclick="openDriverForm()"
+            >
+                📝 Haydovchi bo‘lish
+            </button>
+
+
+            <!-- DRIVER FORM -->
+            <div
+                class="form-box"
+                id="driverForm"
+            >
+
+                <form id="applicationForm">
+
+                    <label for="name">
+                        1. Ismingiz
+                    </label>
+
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Masalan: Azizbek"
+                        required
+                    >
+
+
+                    <label for="phone">
+                        2. Telefon raqamingiz
+                    </label>
+
+                    <input
+                        id="phone"
+                        type="tel"
+                        placeholder="+998 90 123 45 67"
+                        required
+                    >
+
+
+                    <label for="car">
+                        3. Mashina rusumi
+                    </label>
+
+                    <input
+                        id="car"
+                        type="text"
+                        placeholder="Masalan: Chevrolet Nexia 3"
+                        required
+                    >
+
+
+                    <label for="plate">
+                        4. Davlat raqami
+                    </label>
+
+                    <input
+                        id="plate"
+                        type="text"
+                        placeholder="Masalan: 01 A 123 BC"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-green submit"
+                    >
+                        📤 Arizani yuborish
+                    </button>
+
+                </form>
+
+
+                <div
+                    class="form-status"
+                    id="formStatus"
+                >
+                    ✅ Arizangiz qabul qilindi!
+                    <br>
+                    Tez orada siz bilan bog‘lanamiz.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <strong>
+            🚕 7-Savxoz Tezkor Taksi
+        </strong>
+
+        <p class="footer-location">
+            Sirdaryo viloyati, Sardoba tumani, 7-Savxoz
+        </p>
+
+
+        <div
+            class="footer-phone"
+            onclick="copyPhone()"
+        >
+            📞 +998 87 888 53 01
+        </div>
+
+
+        <p class="footer-telegram">
+            Telegram:
+
+            <a
+                href="https://t.me/t_baxtiyarovic"
+                target="_blank"
+                rel="noopener"
+            >
+                @t_baxtiyarovic
+            </a>
+        </p>
+
+
+        <p class="copyright">
+            © 2026 7-Savxoz Tezkor Taksi
+        </p>
+
+    </footer>
+
+
+    <!-- TOAST -->
+    <div
+        class="toast"
+        id="toast"
+    >
+        Telefon raqami nusxalandi!
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // TAXI TELEFON RAQAMI
+        const taxiPhone = "+998878885301";
+
+
+        // TOAST XABAR
+        function showToast(message) {
+
+            const toast =
+                document.getElementById("toast");
+
+            toast.textContent = message;
+
+            toast.classList.add("show");
+
+
+            setTimeout(() => {
+
+                toast.classList.remove("show");
+
+            }, 2500);
+
+        }
+
+
+        // TELEFON RAQAMINI NUSXALASH
+        async function copyPhone() {
+
+            try {
+
+                await navigator.clipboard.writeText(taxiPhone);
+
+                showToast(
+                    "✅ Telefon raqami nusxalandi!"
+                );
+
+            } catch (error) {
+
+                const textarea =
+                    document.createElement("textarea");
+
+                textarea.value = taxiPhone;
+
+                textarea.style.position = "fixed";
+                textarea.style.opacity = "0";
+
+                document.body.appendChild(textarea);
+
+                textarea.select();
+
+                try {
+
+                    document.execCommand("copy");
+
+                    showToast(
+                        "✅ Telefon raqami nusxalandi!"
+                    );
+
+                } catch (e) {
+
+                    showToast(
+                        "📞 Raqam: " + taxiPhone
+                    );
+
+                }
+
+                document.body.removeChild(textarea);
+            }
+
+        }
+
+
+        // HAYDOVCHI FORMASINI OCHISH
+        function openDriverForm() {
+
+            const form =
+                document.getElementById("driverForm");
+
+            form.classList.toggle("active");
+
+
+            if (form.classList.contains("active")) {
+
+                setTimeout(() => {
+
+                    form.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+
+                }, 100);
+
+            }
+
+        }
+
+
+        // HAYDOVCHI ARIZASI
+        document
+            .getElementById("applicationForm")
+            .addEventListener(
+                "submit",
+                async function(event) {
+
+                    event.preventDefault();
+
+
+                    const name =
+                        document
+                            .getElementById("name")
+                            .value
+                            .trim();
+
+
+                    const phone =
+                        document
+                            .getElementById("phone")
+                            .value
+                            .trim();
+
+
+                    const car =
+                        document
+                            .getElementById("car")
+                            .value
+                            .trim();
+
+
+                    const plate =
+                        document
+                            .getElementById("plate")
+                            .value
+                            .trim();
+
+
+                    const form =
+                        document.getElementById(
+                            "applicationForm"
+                        );
+
+
+                    const status =
+                        document.getElementById(
+                            "formStatus"
+                        );
+
+
+                    // Yuborish tugmasi
+                    const submitButton =
+                        form.querySelector(
+                            "button[type='submit']"
+                        );
+
+
+                    submitButton.disabled = true;
+
+                    submitButton.textContent =
+                        "⏳ Yuborilmoqda...";
+
+
+                    try {
+
+                        // Serverga yuborish
+                        const response =
+                            await fetch(
+                                "/api/driver",
+                                {
+                                    method: "POST",
+
+                                    headers: {
+                                        "Content-Type":
+                                            "application/json"
+                                    },
+
+                                    body: JSON.stringify({
+                                        name: name,
+                                        phone: phone,
+                                        car: car,
+                                        plate: plate
+                                    })
+                                }
+                            );
+
+
+                        const data =
+                            await response.json();
+
+
+                        // Server xatosi
+                        if (
+                            !response.ok ||
+                            !data.ok
+                        ) {
+
+                            throw new Error(
+                                data.message ||
+                                "Xatolik yuz berdi"
+                            );
+
+                        }
+
+
+                        // Forma yashiriladi
+                        form.style.display =
+                            "none";
+
+
+                        // Muvaffaqiyat xabari
+                        status.style.display =
+                            "block";
+
+
+                        status.innerHTML =
+                            "✅ Arizangiz muvaffaqiyatli yuborildi!<br>" +
+                            "Tez orada siz bilan bog‘lanamiz.";
+
+
+                    } catch (error) {
+
+                        console.error(error);
+
+
+                        submitButton.disabled =
+                            false;
+
+
+                        submitButton.textContent =
+                            "📤 Arizani yuborish";
+
+
+                        status.style.display =
+                            "block";
+
+
+                        status.innerHTML =
+                            "❌ Arizani yuborishda xatolik yuz berdi.<br>" +
+                            "Iltimos, qaytadan urinib ko‘ring.";
+
+                    }
+
+                }
+            );
+
+    </script>
+
+</body>
+</html>
+```
